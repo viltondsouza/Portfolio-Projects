@@ -44,7 +44,7 @@ WHERE continent is  not  null
 GROUP BY Location
 ORDER BY TotalDeathCounts desc
 
---Lets breaks this down
+-- Breaking this down
 
 SELECT Location,MAX(cast(total_deaths as int)) as TotalDeathCounts
 FROM PortfolioProject..CovidDeaths
